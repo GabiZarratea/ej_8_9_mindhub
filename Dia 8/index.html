@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>Formularios y Mapas</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container_1">
+            <h3>Registro de OSDeDA</h3>
+            <h4>(Obra Social De Desarrolladores)</h4>
+            <p>Tel: <a href="tel:9703726385">9703726385</a></p>
+            <p>Email: <a href="mailto:contacto@osdeda.com">contacto@osdeda.com</a></p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210146.47899812937!2d-58.43329845000001!3d-34.61582374999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1684336242806!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="container_2">
+            <form action="./assets/pages/show_data.html" method="get">
+                <fieldset class="data">
+                    <legend>Datos personales</legend>
+                    <div class="data_1">
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="nombre" id="name" placeholder="nombre">
+                    </div>
+                    <div class="data_1">
+                    <label for="surname">Apellido:</label>
+                    <input type="text" name="apellido" id="surname" placeholder="apellido">
+                    </div>
+                    <div class="data_1">
+                    <label for="age">Edad:</label>
+                    <input type="text" name="edad" id="age" placeholder="edad">
+                    </div>
+                </fieldset>
+                <fieldset class="children">
+                    <legend>Numero de hijos</legend>
+                    <div class="children_1">
+                    <label for="no">No tiene</label>
+                    <input type="checkbox" name="hijos" id="no" value="No tiene">
+                    </div>
+                    <div class="children_1">
+                    <label for="two_one">2 o menos</label>
+                    <input type="checkbox" name="hijos" id="two_one" value="2 o menos">
+                    </div>
+                    <div class="children_1">
+                    <label for="more_two">Mas de 2</label>
+                    <input type="checkbox" name="hijos" id="more_two" value="mas de 2">
+                    </div>
+                </fieldset>
+                <fieldset class="msj">
+                    <legend>Mensaje</legend>
+                    <textarea name="mensaje" id="message" class="msj_1"></textarea>
+                </fieldset>
+                <div class="final">
+                <label for="loc">Locación</label>
+                <select name="locacion" id="loc">
+                    <option value="GBA">GBA</option>
+                    <option value="CABA">CABA</option>
+                </select>
+                <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
